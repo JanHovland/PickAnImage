@@ -14,13 +14,13 @@ import Combine
 struct ContentView: View {
     
     @ObservedObject var sheet = SettingsSheet()
-    
     @State var showImagePicker: Bool = false
     @State var image: UIImage?
     
     var body: some View {
         VStack {
             if image != nil {
+                /// Her vises enten hele eller deler av det valgte bildet fra .photoLibrary
                 Image(uiImage: image!)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -31,15 +31,15 @@ struct ContentView: View {
                 action: { ImgPicker() },
                 label: {
                     HStack {
-                        Text(NSLocalizedString("Pick image", comment: "test"))
+                        Text(NSLocalizedString("Pick an image", comment: "ContentView"))
                     }
                 }
             )
         }
+        /// Slik må .sheet implementers i Xcode Version 12 og macOS 11
         .sheet(isPresented: $sheet.isShowing, content: sheetContent)
     }
-    
-    /// Her legges det inn knytning til aktuelle view
+    /// Her legges det inn knytning til aktuelle view i i Xcode Version 12 og macOS 11
     @ViewBuilder
     private func sheetContent() -> some View {
         if sheet.state == .imagePicker {
@@ -50,27 +50,26 @@ struct ContentView: View {
             EmptyView()
         }
     }
-    
-    /// Her legges det inn aktuelle sheet.state
+    /// Her legges det inn aktuelle sheet.state i i Xcode Version 12 og macOS 11
     func ImgPicker() {
         sheet.state = .imagePicker
     }
-    
 }
 
 public struct ImagePickerView: UIViewControllerRepresentable {
-    
     private let sourceType: UIImagePickerController.SourceType
     private let onImagePicked: (UIImage) -> Void
     @Environment(\.presentationMode) private var presentationMode
     
     public init(sourceType: UIImagePickerController.SourceType, onImagePicked: @escaping (UIImage) -> Void) {
+        /// Hente bilde fra photoLibrary
         self.sourceType = .photoLibrary
         self.onImagePicked = onImagePicked
     }
     
     public func makeUIViewController(context: Context) -> UIImagePickerController {
         let picker = UIImagePickerController()
+        /// Hente bilde fra photoLibrary
         picker.sourceType = .photoLibrary
         /// Muliggjør utvalg på bildet
         picker.allowsEditing = true
@@ -114,5 +113,4 @@ public struct ImagePickerView: UIViewControllerRepresentable {
         }
         
     }
-    
 }
