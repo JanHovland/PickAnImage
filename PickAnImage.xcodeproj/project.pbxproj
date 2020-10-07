@@ -11,6 +11,8 @@
 		DBD510C8252E222F0064C451 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD510C7252E222F0064C451 /* ContentView.swift */; };
 		DBD510CA252E222F0064C451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD510C9252E222F0064C451 /* Assets.xcassets */; };
 		DBD510CD252E222F0064C451 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD510CC252E222F0064C451 /* Preview Assets.xcassets */; };
+		DBD510D6252E228D0064C451 /* SettingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD510D5252E228D0064C451 /* SettingSheet.swift */; };
+		DBD510D9252E22B20064C451 /* SheetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD510D8252E22B20064C451 /* SheetState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		DBD510C9252E222F0064C451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBD510CC252E222F0064C451 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBD510CE252E222F0064C451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD510D5252E228D0064C451 /* SettingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSheet.swift; sourceTree = "<group>"; };
+		DBD510D8252E22B20064C451 /* SheetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				DBD510C9252E222F0064C451 /* Assets.xcassets */,
 				DBD510CE252E222F0064C451 /* Info.plist */,
 				DBD510CB252E222F0064C451 /* Preview Content */,
+				DBD510D5252E228D0064C451 /* SettingSheet.swift */,
+				DBD510D8252E22B20064C451 /* SheetState.swift */,
 			);
 			path = PickAnImage;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD510D6252E228D0064C451 /* SettingSheet.swift in Sources */,
+				DBD510D9252E22B20064C451 /* SheetState.swift in Sources */,
 				DBD510C8252E222F0064C451 /* ContentView.swift in Sources */,
 				DBD510C6252E222F0064C451 /* PickAnImageApp.swift in Sources */,
 			);
