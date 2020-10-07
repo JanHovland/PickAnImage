@@ -5,7 +5,8 @@
 //  Created by Jan Hovland on 07/10/2020.
 //
 
-import SwiftUI
+// Dokumentasjon:
+// https://stackoverflow.com/questions/57110290/how-to-pick-image-from-gallery-in-swiftui
 
 import SwiftUI
 import Combine
