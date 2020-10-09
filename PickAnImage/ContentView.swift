@@ -28,7 +28,7 @@ struct ContentView: View {
                     .clipShape(Circle())
             }
             Button(
-                action: { ImgPicker() },
+                action: { Image_Picker_View() },
                 label: {
                     HStack {
                         Text(NSLocalizedString("Pick an image", comment: "ContentView"))
@@ -51,7 +51,7 @@ struct ContentView: View {
         }
     }
     /// Her legges det inn aktuelle sheet.state i i Xcode Version 12 og macOS 11
-    func ImgPicker() {
+    func Image_Picker_View() {
         sheet.state = .imagePicker
     }
 }
