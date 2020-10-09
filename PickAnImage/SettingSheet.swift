@@ -11,6 +11,6 @@ import SwiftUI
 
 class SettingsSheet: SheetState<SettingsSheet.State> {
     enum State {
-        case imagePicker
+        case imagePickerVer01
     }
 }

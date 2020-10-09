@@ -28,7 +28,7 @@ struct ContentView: View {
                     .clipShape(Circle())
             }
             Button(
-                action: { Image_Picker_View() },
+                action: { Image_Picker_Ver_01() },
                 label: {
                     HStack {
                         Text(NSLocalizedString("Pick an image", comment: "ContentView"))
@@ -42,8 +42,8 @@ struct ContentView: View {
     /// Her legges det inn knytning til aktuelle view i i Xcode Version 12 og macOS 11
     @ViewBuilder
     private func sheetContent() -> some View {
-        if sheet.state == .imagePicker {
-            ImagePickerView(sourceType: .photoLibrary) { image in
+        if sheet.state == .imagePickerVer01 {
+            ImagePickerVer01(sourceType: .photoLibrary) { image in
                 self.image = image
             }
         } else {
@@ -51,12 +51,12 @@ struct ContentView: View {
         }
     }
     /// Her legges det inn aktuelle sheet.state i i Xcode Version 12 og macOS 11
-    func Image_Picker_View() {
-        sheet.state = .imagePicker
+    func Image_Picker_Ver_01() {
+        sheet.state = .imagePickerVer01
     }
 }
 
-public struct ImagePickerView: UIViewControllerRepresentable {
+public struct ImagePickerVer01: UIViewControllerRepresentable {
     private let sourceType: UIImagePickerController.SourceType
     private let onImagePicked: (UIImage) -> Void
     @Environment(\.presentationMode) private var presentationMode
