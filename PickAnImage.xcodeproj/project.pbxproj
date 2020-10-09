@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBB11DB125308849005581AD /* ImagePickerVer01.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB11DB025308849005581AD /* ImagePickerVer01.swift */; };
 		DBD510C6252E222F0064C451 /* PickAnImageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD510C5252E222F0064C451 /* PickAnImageApp.swift */; };
 		DBD510C8252E222F0064C451 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD510C7252E222F0064C451 /* ContentView.swift */; };
 		DBD510CA252E222F0064C451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD510C9252E222F0064C451 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBB11DB025308849005581AD /* ImagePickerVer01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerVer01.swift; sourceTree = "<group>"; };
 		DBD510C2252E222E0064C451 /* PickAnImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickAnImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD510C5252E222F0064C451 /* PickAnImageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAnImageApp.swift; sourceTree = "<group>"; };
 		DBD510C7252E222F0064C451 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				DBD510CB252E222F0064C451 /* Preview Content */,
 				DBD510D5252E228D0064C451 /* SettingSheet.swift */,
 				DBD510D8252E22B20064C451 /* SheetState.swift */,
+				DBB11DB025308849005581AD /* ImagePickerVer01.swift */,
 			);
 			path = PickAnImage;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				DBD510D6252E228D0064C451 /* SettingSheet.swift in Sources */,
 				DBD510D9252E22B20064C451 /* SheetState.swift in Sources */,
 				DBD510C8252E222F0064C451 /* ContentView.swift in Sources */,
+				DBB11DB125308849005581AD /* ImagePickerVer01.swift in Sources */,
 				DBD510C6252E222F0064C451 /* PickAnImageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
